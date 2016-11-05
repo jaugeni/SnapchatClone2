@@ -16,6 +16,7 @@
 		9362B01D1DCE77F50002F9CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9362B01C1DCE77F50002F9CD /* GoogleService-Info.plist */; };
 		9362B0201DCE82490002F9CD /* SnapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362B01F1DCE82490002F9CD /* SnapsVC.swift */; };
 		9362B0271DCE84B10002F9CD /* PictureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362B0261DCE84B10002F9CD /* PictureVC.swift */; };
+		9362B0291DCE8F690002F9CD /* SelectUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362B0281DCE8F690002F9CD /* SelectUserVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		9362B01C1DCE77F50002F9CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9362B01F1DCE82490002F9CD /* SnapsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsVC.swift; sourceTree = "<group>"; };
 		9362B0261DCE84B10002F9CD /* PictureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureVC.swift; sourceTree = "<group>"; };
+		9362B0281DCE8F690002F9CD /* SelectUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserVC.swift; sourceTree = "<group>"; };
 		E50F0FE3A1D45F56735D4422 /* Pods_SnapchatClone2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapchatClone2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 				9362B00C1DCE775E0002F9CD /* SignInVC.swift */,
 				9362B01F1DCE82490002F9CD /* SnapsVC.swift */,
 				9362B0261DCE84B10002F9CD /* PictureVC.swift */,
+				9362B0281DCE8F690002F9CD /* SelectUserVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				9362B00D1DCE775E0002F9CD /* SignInVC.swift in Sources */,
 				9362B00B1DCE775E0002F9CD /* AppDelegate.swift in Sources */,
 				9362B0201DCE82490002F9CD /* SnapsVC.swift in Sources */,
+				9362B0291DCE8F690002F9CD /* SelectUserVC.swift in Sources */,
 				9362B0271DCE84B10002F9CD /* PictureVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
