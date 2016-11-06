@@ -18,10 +18,13 @@ class PictureVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     
     var imagePicker = UIImagePickerController()
     
+    var uuid = NSUUID().uuidString
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         imagePicker.delegate = self
+        nextBtnOutlet.isEnabled = false
         
     }
     
@@ -32,6 +35,8 @@ class PictureVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         
         imageView.backgroundColor = UIColor.clear
         
+                nextBtnOutlet.isEnabled = true
+        
         imagePicker.dismiss(animated: true, completion: nil)
         
     }
@@ -39,7 +44,7 @@ class PictureVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     
     @IBAction func cameraBtm(_ sender: Any) {
         
-        imagePicker.sourceType = .savedPhotosAlbum
+        imagePicker.sourceType = .camera
         imagePicker.allowsEditing = false
         
         present(imagePicker, animated: true, completion: nil)
@@ -56,7 +61,7 @@ class PictureVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         
         
         
-        imagesFolder.child("\(NSUUID().uuidString).jpg").put(imageData, metadata: nil, completion: {(metadata, error) in
+        imagesFolder.child("\(uuid).jpg").put(imageData, metadata: nil, completion: {(metadata, error) in
             print("We tried to upload!")
             if error != nil {
                 print("We had an error:\(error)")
@@ -78,6 +83,7 @@ class PictureVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         let nextVC = segue.destination as! SelectUserVC
         nextVC.imageURL = sender as! String
         nextVC.descrip = descriptionTextField.text!
+        nextVC.uuid = uuid
         
     }
     
